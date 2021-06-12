@@ -12,7 +12,7 @@ use Illuminate\Validation\ValidationException;
 use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
-
+use GuzzleHttp\Exception\ClientException;
 class Handler extends ExceptionHandler
 {
     use ApiResponser;
