@@ -33,7 +33,7 @@ $app->configure('auth');
 
 $app->configure('database');
 
-$app->configure('permission');
+
 
 /*
 |--------------------------------------------------------------------------
