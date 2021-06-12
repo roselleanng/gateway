@@ -18,17 +18,17 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['middleware'=>'client.credentials'],function() use ($router) {
-    //API GATEWAY FOR BOOKS
-    $router->get('/books', 'BookController@index');
-    $router->post('/books', 'BookController@add');
-    $router->get('/books/{id}', 'BookController@show'); 
-    $router->put('/books/{id}', 'BookController@update');
-    $router->delete('/books/{id}', 'BookController@delete');
 
-    //API GATEWAY FOR AUTHORS
-    $router->get('/authors', 'AuthorController@index');
-    $router->post('/authors', 'AuthorController@add');
-    $router->get('/authors/{id}', 'AuthorController@show'); 
-    $router->put('/authors/{id}', 'AuthorController@update');
-    $router->delete('/authors/{id}', 'AuthorController@delete');
+$router->get('/books', 'BookController@index');
+$router->post('/books', 'BookController@add');
+$router->get('/books/{id}', 'BookController@show'); 
+$router->put('/books/{id}', 'BookController@update');
+$router->delete('/books/{id}', 'BookController@delete');
+
+
+$router->get('/authors', 'AuthorController@index');
+$router->post('/authors', 'AuthorController@add');
+$router->get('/authors/{id}', 'AuthorController@show'); 
+$router->put('/authors/{id}', 'AuthorController@update');
+$router->delete('/authors/{id}', 'AuthorController@delete');
 });
